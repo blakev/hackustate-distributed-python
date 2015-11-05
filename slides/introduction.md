@@ -1,15 +1,28 @@
+class: middle center inverted
+
+# Introduction
+---
+
+
 .left-column[
-### One
-
-### Two
-
-### Three
+## Introduction
+### Who am I?
 ]
+---
 
-.right-column[
-    Test the Right
+.left-column[
+## Introduction
+### Who am I?
+### What have I done?
 ]
+---
 
-.footnote[
-    Test This Footer
+.left-column[
+## Introduction
+### Who am I?
+### What have I done?
+### What am I doing now?
 ]
+---
+
+

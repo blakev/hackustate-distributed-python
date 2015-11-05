@@ -8,7 +8,10 @@
     "slides": {
         "directory": ["slides"],
         "order": [
-            "introduction.md"
+            "_templates.md",
+            "title.md",
+            "introduction.md",
+            "goals.md"
         ]
     }
 }

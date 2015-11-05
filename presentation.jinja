@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+{% from "templates/_macros.jinja" import code_block, footer %}
+{% from "templates/_macros.jinja" import title_page, full_page, split_page %}
+<html lang="en">
 <head>
     {% include "templates/_meta.jinja" %}
     {% include "templates/_styles.jinja" %}
@@ -12,10 +14,10 @@
 {% else %}
     <!-- Generate the presentation as a remark.js file -->
     <textarea name="source" id="source">
-        {%- for slide in slides.order -%}
-            {% set fpath = (slides.directory + [slide])|join('/') %}
-            {%- include fpath -%}
-        {% endfor %}
+{%- for slide in slides.order -%}
+{% set fpath = (slides.directory + [slide])|join('/') %}
+{%- include fpath %}
+{% endfor %}
     </textarea>
 
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
