@@ -1,0 +1,57 @@
+{% macro code_block(language, content_location) %}
+
+.codeblock[.text[.right[{{ language|lower }}]]
+
+```{{ language }}
+{% include content_location %}
+```
+]
+
+.right[.subnote[
+    source: <a href="./{{ content_location }}">{{ content_location }}</a>
+]]
+{% endmacro %}
+
+{% macro footer(title) %}
+    {% include "templates/footer.jinja" %}
+{% endmacro %}
+
+{% macro title_page(title) %}
+
+template: title
+class: middle center
+layout: true
+
+.footnote[.center[
+    {{ footer(title) }}
+]]
+---
+name: title
+{% endmacro %}
+
+
+{% macro full_page(title) %}
+
+template: full
+class: top left
+layout: true
+
+.footnote[.center[
+    {{ footer(title) }}
+]]
+---
+name: full
+{% endmacro %}
+
+
+{% macro split_page(title) %}
+template: split
+class: top left
+layout: true
+
+.right-column[.footnote[
+    {{ footer(title) }}
+]]
+---
+name: split
+{% endmacro %}
