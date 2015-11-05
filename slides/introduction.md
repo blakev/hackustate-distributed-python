@@ -1,17 +1,15 @@
-name: inverse
-layout: true
-class: center, middle, inverse
----
-# Introduction
----
-layout: false
-
 .left-column[
-  ## Introduction
+### One
+
+### Two
+
+### Three
 ]
+
 .right-column[
- - one
- - two
- - three
+    Test the Right
 ]
----
+
+.footnote[
+    Test This Footer
+]
