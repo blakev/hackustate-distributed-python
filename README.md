@@ -10,10 +10,10 @@ cd hackustate-distributed-python
 pip install jinja2-cli
 
 # tell jinja to build the presentation
-jinja2 presentation.jinja info.json --format=json >> ./presentation.html
+jinja2 presentation.jinja info.json --format=json > ./presentation.html
 
 # tell jinja to generate the presentation as a report
-jinja2 presentation.jinja info.json --format=json -D flatpaper=True >> ./paper.html
+jinja2 presentation.jinja info.json --format=json -D flatpaper=True > ./paper.html
 
 # open the presentation in the default browser window
 sensible-browser ./presentation.html &
