@@ -23,7 +23,7 @@ jinja2 presentation.jinja info.json --format=json > ./presentation.html
 jinja2 presentation.jinja info.json --format=json -D flatpaper=True > ./paper.html
 
 # open the presentation in the default browser window
-sensible-browser ./presentation.html &
+xdg-open ./presentation.html &
 ```
 
 ### Attribution
