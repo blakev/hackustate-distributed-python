@@ -1,0 +1,102 @@
+/*      units       */
+@em:                .8em;
+@left-width:        20%;
+
+/*      colors      */
+@black:             #141414;
+@white:             #FDFDFD;
+@light-grey:        #8A867F;
+
+@darkest:           #14110E;
+@darker:            #211C16;
+@dark:              #40352B;
+@light:             #FFE2A1;
+@lightest:          #FFF4E8;
+
+@bg-bright:         #FFDCB1;
+@bg-dark:           #7F6E58;
+
+/*      fonts       */
+
+
+@font-default: 'Open Sans';
+@font-console: 'Ubuntu Mono';
+@font-header:  'Yanone Kaffeesatz';
+
+body {
+    font-fmaily: @font-default;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4 {
+    font-family: @font-header;
+    font-weight: normal;
+    padding-top: @em / 2;
+    padding-bottom: @em * 0.75;
+    margin: 0;
+}
+
+.codestyle {
+    font-family: @font-console;
+    line-height: @em * 90%;
+}
+
+.remark-code {
+    .codestyle
+}
+
+.remark-inline-code {
+    .codestyle
+}
+
+.remark-slide-content {
+    background-color: @white;
+}
+
+.remark-slide-container {   // background of "page"
+    background-color: @dark;
+}
+
+.remark-slide-scaler {      // the "visible slide"
+    box-shadow: 0px 0px 30px @darker;
+}
+
+/*      custom positioners  */
+.footnote {
+    position: absolute;
+    bottom: @em * 3;
+    left: @left-width + 10%;
+    color: @light-grey;
+}
+
+.column {
+    padding-top: @em;
+    padding-bottom: @em;
+}
+
+.left-column {
+    @left-padding: @em + (@em / 2);
+
+    .column;
+    padding-left: @left-padding;
+    background-color: @bg-bright;
+    color: @bg-dark;
+    width: @left-width;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    h2:last-of-type, h3:last-child {
+        color: @black;
+    }
+}
+
+.right-column {
+    .column;
+    font-family: @font-default;
+    height: 90%;
+    width: 100% - @left-width;
+    padding-top: @em;
+    float: right;
+}
