@@ -1,10 +1,27 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>{{ title }}</title>    
+    {% include "templates/_meta.jinja" %}
+    {% include "templates/_styles.jinja" %}
+    <title>{{ meta.title }}</title>    
 </head>
 <body>
-    {{ author }}
-    <br>
-    {{ flatpaper }}
+{% if flatpaper is defined %}
+    <!-- Generate the presentation in one long HTML file -->
+
+{% else %}
+    <!-- Generate the presentation as a remark.js file -->
+    <textarea name="source" id="source">
+        {%- for slide in slides.order -%}
+            {% set fpath = (slides.directory + [slide])|join('/') %}
+            {%- include fpath -%}
+        {% endfor %}
+    </textarea>
+
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+{% endif %}
 </body>
 </html>

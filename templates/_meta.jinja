@@ -1,0 +1,4 @@
+<meta charset="utf-8">
+{% for attrib, value in meta.items() -%}
+    <meta name="{{ attrib }}" content="{{ value }}">
+{% endfor %}

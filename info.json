@@ -1,4 +1,14 @@
 {
-    "author": "Blake VandeMerwe",
-    "title": "Zero to 100%: Distributed Computing in Python"
+    "meta": {
+        "author": "Blake VandeMerwe",
+        "title": "Zero to 100%: Distributed Computing in Python",
+        "keywords": "Python Celery Distributed Computing Cluster Child-Process Processes Processing",
+        "description": "<description>"        
+    }, 
+    "slides": {
+        "directory": ["slides"],
+        "order": [
+            "introduction.md"
+        ]
+    }
 }
