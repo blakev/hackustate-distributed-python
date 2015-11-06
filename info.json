@@ -11,7 +11,15 @@
             "_templates.md",
             "title.md",
             "introduction.md",
-            "goals.md"
+            "goals.md",
+            "high_what-is-distributed.md",
+            "high_distributed-vs-not.md",
+            "high_why-python.md",
+            "low_terminology.md",
+            "low_implementation-pseudo.md",
+            "low_implementation-real.md",
+            "conclusion.md",
+            "questions.md"
         ]
     }
 }
