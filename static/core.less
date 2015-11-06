@@ -16,9 +16,12 @@
 @bg-bright:         #FFDCB1;
 @bg-dark:           #7F6E58;
 
+@suu-red:           #B10000;
+@uvu-green:         #105F25;
+@vivint-orange:     #FF8201;
+@twitch-purple:     #6441A5;
+
 /*      fonts       */
-
-
 @font-default: 'Open Sans';
 @font-console: 'Ubuntu Mono';
 @font-header:  'Yanone Kaffeesatz';
@@ -28,9 +31,17 @@ body {
     font-weight: normal;
 }
 
-.inverted.remark-slide-content {
-    color: @lightest;
-    background-color: @darker;
+ul {
+    list-style: none;
+    margin-left: none;
+    padding-left: none;
+}
+
+ul > li:before {
+    display: inline-block;
+    content: "-";
+    width: @em;
+    margin-left: @em * -1;
 }
 
 h1, h2, h3, h4 {
@@ -161,4 +172,38 @@ a:hover {
         .footnote;
         left: @left-width + 10%
     }
+}
+
+/* custom stylez */
+.inverted.remark-slide-content {
+    color: @lightest;
+    background-color: @darker;
+}
+
+.ctext {
+    font-weight: bold;
+}
+
+.uvu {
+    .ctext;
+    color: @uvu-green;
+}
+
+.suu {
+    .ctext;
+    color: @suu-red;
+}
+
+.vivint {
+    .ctext;
+    color: @vivint-orange;
+}
+
+.twitch {
+    .ctext;
+    color: @twitch-purple;
+}
+
+.mute {
+    color: @lighter-grey;
 }
