@@ -1,6 +1,10 @@
-# hackustate-distributed-python
-Workshop materials for HackUState Hackathon.
+![HackUState](http://i.imgur.com/kclXl9A.png)
+---
+### Zero to 100%: Python Distributed Computing in 20 Minutes!
 
+Workshop materials.
+
+To compile the presentation:
 ```bash
 # grab the current project and cd into its folder
 git clone git@github.com:blakev/hackustate-distributed-python.git
@@ -19,12 +23,11 @@ jinja2 presentation.jinja info.json --format=json > ./presentation.html
 jinja2 presentation.jinja info.json --format=json -D flatpaper=True > ./paper.html
 
 # open the presentation in the default browser window
-sensible-browser ./presentation.html &
+xdg-open ./presentation.html &
 ```
 
-### Dependencies
+### Attribution
   - [Python](https://python.org)
-  - [less](http://lesscss.org) CSS pre-processor.
   - [lesscpy](https://github.com/lesscpy/lesscpy) less compiler written in Python.
   - [Remark](https://github.com/gnab/remark) HTML slideshow.
   - [Jinja2-cli](https://github.com/mattrobenolt/jinja2-cli) Templating library interface.
