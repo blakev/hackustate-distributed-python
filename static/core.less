@@ -16,10 +16,13 @@
 @bg-bright:         #FFDCB1;
 @bg-dark:           #7F6E58;
 
+@usu-blue:          #0F2439;
 @suu-red:           #B10000;
 @uvu-green:         #105F25;
 @vivint-orange:     #FF8201;
 @twitch-purple:     #6441A5;
+@ksl-blue:          #64A7F1;
+
 
 /*      fonts       */
 @font-default: 'Open Sans';
@@ -178,6 +181,12 @@ a:hover {
 .inverted.remark-slide-content {
     color: @lightest;
     background-color: @darker;
+    font-family: @font-default;
+    
+    .left-column {
+        background-color: @dark;
+        color: @lighter-grey;
+    }
 }
 
 .ctext {
@@ -206,4 +215,18 @@ a:hover {
 
 .mute {
     color: @lighter-grey;
+}
+
+.usu {
+    .ctext;
+    color: @usu-blue;
+}
+
+.ksl {
+    .ctext;
+    color: @ksl-blue;
+}
+
+.big-text {
+    font-size: 120%;
 }

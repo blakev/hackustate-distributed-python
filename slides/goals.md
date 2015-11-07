@@ -6,13 +6,16 @@ class: middle center inverted
 ---
 
 # Goals: High-Level
-- ### Learn when we can consider distributed computing
-  - ...and maybe when it's not a great idea.
-- ### Distributed vs. Not Distributed
-  - single thread, threaded
-  - solo-process, multi-process
-  - local-distributed, true-distributed
-- ### Why Python?
+
+### Distributed vs. Not Distributed
+- single thread, threaded
+- solo-process, multi-process
+- local-distributed, true-distributed
+
+### Learn when we should consider distributed computing
+- ...and maybe when it's not a great idea.
+
+### Why Python?
 
 .footnote[.center[{{ footer(meta.title) }}]]
 
@@ -21,9 +24,9 @@ class: middle center inverted
 class: inverted
 
 # Goals: Low-Level
-- ### Key terms and concepts
-- ### Pseudo Implementation
-- ### Real Implementation
+### Key terms and concepts
+### Pseudo Implementation
+### Real Implementation
 
 {{ code_block('python', "code/sample.py") }}
 
